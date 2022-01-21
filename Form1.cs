@@ -46,10 +46,13 @@ namespace Game2048
                             {
                                 if (_board._cellPic[x, k] != null)
                                 {
+                                    if (_board._cellPic[x, k].Text != _board._cellPic[x, y].Text)
+                                        break;
+
                                     if (_board._cellPic[x, k].Text == _board._cellPic[x, y].Text)
                                     {
                                         _board._cellPic[x, y].Text = (int.Parse(_board._cellPic[x, y].Text) +
-                                                               int.Parse(_board._cellPic[x, k].Text)).ToString();
+                                                                      int.Parse(_board._cellPic[x, k].Text)).ToString();
                                         _board.BackGroundColorBasedOnNumber(_board._cellPic[x, y].Text, x, y);
 
                                         _score += int.Parse(_board._cellPic[x, y].Text);
@@ -90,6 +93,9 @@ namespace Game2048
                             {
                                 if (_board._cellPic[x, k] != null)
                                 {
+                                    if (_board._cellPic[x, k].Text != _board._cellPic[x, y].Text)
+                                        break;
+
                                     if (_board._cellPic[x, k].Text == _board._cellPic[x, y].Text)
                                     {
                                         _board._cellPic[x, y].Text = (int.Parse(_board._cellPic[x, y].Text) +
@@ -136,6 +142,9 @@ namespace Game2048
                             {
                                 if (_board._cellPic[k, y] != null)
                                 {
+                                    if (_board._cellPic[k, y].Text != _board._cellPic[x, y].Text)
+                                        break;
+
                                     if (_board._cellPic[k, y].Text == _board._cellPic[x, y].Text)
                                     {
                                         _board._cellPic[x, y].Text = (int.Parse(_board._cellPic[x, y].Text) +
@@ -185,6 +194,9 @@ namespace Game2048
                             {
                                 if (_board._cellPic[k, y] != null)
                                 {
+                                    if (_board._cellPic[k, y].Text != _board._cellPic[x, y].Text)
+                                        break;
+
                                     if (_board._cellPic[k, y].Text == _board._cellPic[x, y].Text)
                                     {
                                         _board._cellPic[x, y].Text = (int.Parse(_board._cellPic[x, y].Text) +
