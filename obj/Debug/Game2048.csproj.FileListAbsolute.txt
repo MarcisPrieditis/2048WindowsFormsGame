@@ -9,3 +9,14 @@ C:\Projekti_programmesanas\Game2048\obj\Debug\Game2048.csproj.GenerateResource.c
 C:\Projekti_programmesanas\Game2048\obj\Debug\Game2048.csproj.CoreCompileInputs.cache
 C:\Projekti_programmesanas\Game2048\obj\Debug\Game2048.exe
 C:\Projekti_programmesanas\Game2048\obj\Debug\Game2048.pdb
+C:\Projekti_programmesanas\2048WindowsFormsGame\bin\Debug\Game2048.exe.config
+C:\Projekti_programmesanas\2048WindowsFormsGame\bin\Debug\Game2048.exe
+C:\Projekti_programmesanas\2048WindowsFormsGame\bin\Debug\Game2048.pdb
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.csproj.AssemblyReference.cache
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.csproj.SuggestedBindingRedirects.cache
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.Properties.Resources.resources
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.csproj.GenerateResource.cache
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.csproj.CoreCompileInputs.cache
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.exe
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.pdb
+C:\Projekti_programmesanas\2048WindowsFormsGame\obj\Debug\Game2048.Form1.resources

@@ -46,7 +46,7 @@
             this.ScoreLabel.Location = new System.Drawing.Point(257, 85);
             this.ScoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(60, 34);
+            this.ScoreLabel.Size = new System.Drawing.Size(70, 40);
             this.ScoreLabel.TabIndex = 1;
             this.ScoreLabel.Text = "Score: \r\n 0";
             // 
@@ -58,9 +58,9 @@
             this.HighscoreLabel.Location = new System.Drawing.Point(248, 127);
             this.HighscoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HighscoreLabel.Name = "HighscoreLabel";
-            this.HighscoreLabel.Size = new System.Drawing.Size(107, 17);
+            this.HighscoreLabel.Size = new System.Drawing.Size(115, 40);
             this.HighscoreLabel.TabIndex = 1;
-            this.HighscoreLabel.Text = "High Score: 0";
+            this.HighscoreLabel.Text = "High Score: \r\n   0";
             // 
             // button1
             // 
@@ -79,7 +79,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.No;
             this.button2.Location = new System.Drawing.Point(251, 170);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 25);
             this.button2.TabIndex = 3;
             this.button2.Text = "addcell";
             this.button2.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             this.EnableHardMode.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.EnableHardMode.Location = new System.Drawing.Point(251, 214);
             this.EnableHardMode.Name = "EnableHardMode";
-            this.EnableHardMode.Size = new System.Drawing.Size(130, 17);
+            this.EnableHardMode.Size = new System.Drawing.Size(163, 21);
             this.EnableHardMode.TabIndex = 4;
             this.EnableHardMode.TabStop = true;
             this.EnableHardMode.Text = "Enable Hard Mode";
@@ -113,7 +113,7 @@
             this.CountDownTimer.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.CountDownTimer.Location = new System.Drawing.Point(277, 234);
             this.CountDownTimer.Name = "CountDownTimer";
-            this.CountDownTimer.Size = new System.Drawing.Size(68, 17);
+            this.CountDownTimer.Size = new System.Drawing.Size(79, 20);
             this.CountDownTimer.TabIndex = 5;
             this.CountDownTimer.Text = "Timer: 3";
             // 
@@ -133,6 +133,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "2048";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this._keyboardEvent);
             this.ResumeLayout(false);
             this.PerformLayout();
