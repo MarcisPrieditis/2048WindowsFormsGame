@@ -58,9 +58,9 @@
             this.HighscoreLabel.Location = new System.Drawing.Point(248, 127);
             this.HighscoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HighscoreLabel.Name = "HighscoreLabel";
-            this.HighscoreLabel.Size = new System.Drawing.Size(125, 20);
+            this.HighscoreLabel.Size = new System.Drawing.Size(115, 40);
             this.HighscoreLabel.TabIndex = 1;
-            this.HighscoreLabel.Text = "High Score: 0";
+            this.HighscoreLabel.Text = "High Score: \r\n   0";
             // 
             // button1
             // 
