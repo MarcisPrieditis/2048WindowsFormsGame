@@ -72,17 +72,13 @@ namespace Game2048
                         if (row < 3)
                         {
                             if (BoardCells._cellPic[row, col].Text.Equals(BoardCells._cellPic[row + 1, col].Text))
-                            {
                                 return false;
-                            }
                         }
 
                         if (col < 3)
                         {
                             if (BoardCells._cellPic[row, col].Text.Equals(BoardCells._cellPic[row, col + 1].Text))
-                            {
                                 return false;
-                            }
                         }
                     }
                 }

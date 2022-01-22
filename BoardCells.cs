@@ -7,7 +7,7 @@ namespace Game2048
     public class BoardCells
     {
         public Form1 Form1 { get; set; }
-        public int _width;
+        private int _width;
         private int _height;
         public static int _score;
         public static int _highScore;
@@ -64,10 +64,12 @@ namespace Game2048
 
         public void RandomNewCellPic(int x, int y)
         {
+            var random4Cell = _rnd.Next(0, 9);
             _cellPic[x, y] = new Label();
             _cellPic[x, y].Location = new Point(25 + 55 * y, 25 + 55 * x);
             _cellPic[x, y].Size = new Size(50, 50);
-            _cellPic[x, y].Text = "2";
+            //If random num ==0, 10% chance, than spawn 4 instead of 2 cell
+            _cellPic[x, y].Text = random4Cell == 0 ? "4" : "2";
             BackGroundColorBasedOnNumber(_cellPic[x, y].Text, x, y);
             _cellPic[x, y].ForeColor = Color.White;
             _cellPic[x, y].TextAlign = ContentAlignment.MiddleCenter;
