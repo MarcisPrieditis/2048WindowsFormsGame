@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace Game2048
@@ -8,22 +7,35 @@ namespace Game2048
     public class BoardCells
     {
         public Form1 Form1 { get; set; }
-        private int _width = 4;
-        private int _height = 4;
-        
-        public Label[,] _cellPic = new Label[4, 4];
+        private int _width;
+        private int _height;
+        public static int _score;
+        public static int _highScore;
+        public static Label[,] _cellPic;
         private Random _rnd = new Random();
-        //private static int _score;
-        //private static int _highScore;
+
+        public BoardCells()
+        {
+
+        }
 
         public BoardCells(Form1 form, int width, int height)
         {
             Form1 = form;
             _width = width;
             _height = height;
+            _cellPic = new Label[width, height];
+        }
+
+        public void SetupBoard()
+        {
+            CreatMap();
+            RandomNewCellLocations();
+            RandomNewCellLocations();
         }
 
         public void RandomNewCellLocations()
+
         {
             var x = _rnd.Next(_width);
             var y = _rnd.Next(_height);
@@ -40,21 +52,24 @@ namespace Game2048
             {
                 for (int j = 0; j < _height; j++)
                 {
-                    var c = new PictureBox();
+                    var c = new Label();
                     c.Location = new Point(25 + 55 * j, 25 + 55 * i);
                     c.Size = new Size(50, 50);
                     c.BackColor = Color.AliceBlue;
                     Form1.Controls.Add(c);
+                    c.BringToFront();
                 }
             }
         }
 
         public void RandomNewCellPic(int x, int y)
         {
+            var random4Cell = _rnd.Next(0, 9);
             _cellPic[x, y] = new Label();
             _cellPic[x, y].Location = new Point(25 + 55 * y, 25 + 55 * x);
             _cellPic[x, y].Size = new Size(50, 50);
-            _cellPic[x, y].Text = "2";
+            //If random num ==0, 10% chance, than spawn 4 instead of 2 cell
+            _cellPic[x, y].Text = random4Cell == 0 ? "4" : "2";
             BackGroundColorBasedOnNumber(_cellPic[x, y].Text, x, y);
             _cellPic[x, y].ForeColor = Color.White;
             _cellPic[x, y].TextAlign = ContentAlignment.MiddleCenter;
