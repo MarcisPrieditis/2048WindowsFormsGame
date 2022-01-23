@@ -2,6 +2,10 @@
 
 2048 Game clone made with C# Windows Forms
 
+How to run:<br />
+Go to -> bin -> release -> Game2048.exe Or through Visual Studio 
+
+
 Hard mode does add new random cell every 3seconds.
 
 ![](/2048Board.png)
